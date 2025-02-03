@@ -1,6 +1,6 @@
 #include<stdio.h>
  main(){
-    float a,b;
+    float a;
     scanf("%f",&a);
     printf("you entered: %2f/n",a)
     return 0;
