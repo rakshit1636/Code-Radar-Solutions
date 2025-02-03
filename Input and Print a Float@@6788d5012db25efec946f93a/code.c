@@ -2,7 +2,6 @@
  main(){
     float a,b;
     scanf("%f",&a);
-    scanf("%f",&b);
-    printf("a")
-    printf("b")
+    printf("you entered: %2f/n",a)
+    return 0;
 }
