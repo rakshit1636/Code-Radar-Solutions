@@ -1,7 +1,8 @@
 #include<stdio.h>
 int main(){
-    str a;
-    scanf("%s",&a);
-    printf("You eneterd: %s\n",a);
+    char str[100];
+    printf("");
+    scanf("%s",&str);
+    printf("You eneterd: %s\n",str);
     return 0;
 }
