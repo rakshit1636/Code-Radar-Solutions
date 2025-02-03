@@ -1,5 +1,5 @@
 #include<stdio.h>
- main(){
+ int main(){
     float a;
     scanf("%f",&a);
     printf("you entered: %2f/n",a)
