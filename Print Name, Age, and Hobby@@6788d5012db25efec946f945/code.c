@@ -1,19 +1,29 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
     char name[50], hobby[50];
     int age;
 
-    printf("Enter your name, age, and hobby:\n");
-    scanf("%s %d", name, &age);
-    getchar();  
+    // Taking input
+    printf("Enter your name: ");
+    scanf("%s", name);
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    getchar(); // Consume the leftover newline character
+
+    printf("Enter your hobby: ");
     fgets(hobby, sizeof(hobby), stdin);
 
-    if (hobby[strlen(hobby) - 1] == '\n') {
-        hobby[strlen(hobby) - 1] = '\0';
+    // Removing newline character from hobby if present
+    size_t len = strlen(hobby);
+    if (len > 0 && hobby[len - 1] == '\n') {
+        hobby[len - 1] = '\0';
     }
 
-    printf("Name: %s\n", name);
+    // Printing output
+    printf("\nName: %s\n", name);
     printf("Age: %d\n", age);
     printf("Hobby: %s\n", hobby);
 
