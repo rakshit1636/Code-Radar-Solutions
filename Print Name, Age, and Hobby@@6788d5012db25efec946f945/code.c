@@ -20,7 +20,7 @@ int main() {
         hobby[len - 1] = '\0';
     }
 
-    printf("\nName: %s\n", name);
+    printf("Name: %s\n", name);
     printf("Age: %d\n", age);
     printf("Hobby: %s\n", hobby);
 
