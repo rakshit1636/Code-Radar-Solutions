@@ -12,7 +12,7 @@ void printPyramid(int n) {
 }
 int main() {
     int n;
-    printf("Enter the number of rows: ");
+    printf("");
     scanf("%d", &n);
     printPyramid(n);
     return 0;
